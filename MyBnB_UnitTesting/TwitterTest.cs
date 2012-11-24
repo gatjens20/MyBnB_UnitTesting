@@ -20,6 +20,7 @@ namespace MyBnB_UnitTesting
         }
 
         [Test]        
+        [ExpectedException(typeof(System.IO.FileNotFoundException))]
         public void realizarComentario_Test()
         {
             twitterObj.realizarPublicacion("Se ha registrado una nueva propiedad");
